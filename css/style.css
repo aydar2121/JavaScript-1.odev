@@ -1,0 +1,80 @@
+body {
+    background: black;
+  }
+  
+  .clock {
+    position: relative;
+    text-align: center;
+    color: #e98208;
+    font-size: 60px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 7px;
+  }
+  
+  .text1 {
+    position: relative;
+    text-align: center;
+    color: #e98208;
+    font-size: 50px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 7px;
+    margin-left: 25px;
+  }
+  
+  .text2 {
+    position: relative;
+    text-align: center;
+    color: #e98208;
+    font-size: 40px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 7px;
+    margin-right: 100px;
+    margin-left: 40px;
+  }
+  
+   img {
+       margin-top: 120px;
+       width: 17%;
+  }
+
+
+  .clip{
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 90px;
+    height: 90px;
+    margin-left: 120px;
+    
+
+    
+}
+.clip img{
+  width: 90%;
+  height: 40%;
+
+}
+.clip:before,
+.clip:after {
+content: "JAVASCRİPT";
+color: black;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+position: absolute;
+left: 0;
+top: 120px;
+width: 110%;
+height: 110%;
+margin: -5%;
+box-shadow: inset 0px 0 0 2px #f7df1c;
+animation: clipMe 3s linear infinite;
+padding: 10px;
+}
+.clip:before{
+    animation-delay: -1.5s ;
+}
+@keyframes clipMe {
+    0%, 100% { clip: rect(0, 100px, 2px,0);}
+    25% { clip: rect(0, 2px, 100px, 0);}
+    50% { clip: rect(98px, 100px, 100px, 0);}
+    75% { clip: rect(0, 100px, 100px, 98px);}
+}
